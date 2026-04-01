@@ -75,8 +75,8 @@ PlasmoidItem {
         var months = ["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE",
                       "JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"]
         dayText.text = days[now.getDay()]
-        var d = String(now.getDate()).padStart(2, "0")
-        dateText.text = d + " " + months[now.getMonth()] + ", " + now.getFullYear() + "."
+        var d = String(now.getDate())
+        dateText.text = d + " " + months[now.getMonth()] + " " + now.getFullYear()
         var h = String(now.getHours()).padStart(2, "0")
         var m = String(now.getMinutes()).padStart(2, "0")
         timeText.text = "- " + h + ":" + m + " -"
