@@ -24,7 +24,9 @@ PlasmoidItem {
 
     property real scaledLetterSpacing: 40 * (dayFontSize / 96)
 
-    FontLoader { source: "../fonts/Anurati-Regular.ttf" }
+    property color textColor: Plasmoid.configuration.textColor || "#ffffff"
+    
+    FontLoader { source: "../fonts/Anurati-Regular.otf" }
     FontLoader { source: "../fonts/Quicksand-VariableFont_wght.ttf" }
 
     Column {
@@ -34,7 +36,7 @@ PlasmoidItem {
         Text {
             id: dateText
             anchors.horizontalCenter: parent.horizontalCenter
-            color: "white"
+            color: textColor
             font.family: "Quicksand"
             font.pixelSize: Math.max(10, dayFontSize * 0.22)
             font.letterSpacing: 4
@@ -43,7 +45,7 @@ PlasmoidItem {
         Text {
             id: dayText
             anchors.horizontalCenter: parent.horizontalCenter
-            color: "white"
+            color: textColor
             font.family: "Anurati"
             font.pixelSize: dayFontSize
             font.letterSpacing: scaledLetterSpacing
@@ -52,7 +54,7 @@ PlasmoidItem {
         Text {
             id: timeText
             anchors.horizontalCenter: parent.horizontalCenter
-            color: "white"
+            color: textColor
             font.family: "Quicksand"
             font.pixelSize: Math.max(10, dayFontSize * 0.22)
             font.letterSpacing: 4

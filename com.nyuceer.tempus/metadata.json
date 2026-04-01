@@ -8,5 +8,6 @@
         "Category": "Date and Time",
         "License": "MIT"
     },
+    "KPackageStructure": "Plasma/Applet",
     "X-Plasma-API-Minimum-Version": "6.0"
 }
