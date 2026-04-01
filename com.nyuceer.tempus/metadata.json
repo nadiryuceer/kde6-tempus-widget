@@ -3,10 +3,11 @@
         "Name": "Tempus",
         "Id": "com.nyuceer.tempus",
         "Description": "Minimal clock widget for KDE Plasma 6",
-        "Authors": [{"Name": "nyuceer"}],
+        "Authors": [{"Name": "nadiryuceer", "Email": "nadir.yuceer@gmail.com"}],
         "Version": "1.0",
         "Category": "Date and Time",
-        "License": "MIT"
+        "License": "MIT",
+        "Icon": "/icons/tempus-logo-dark.png"
     },
     "KPackageStructure": "Plasma/Applet",
     "X-Plasma-API-Minimum-Version": "6.0"
