@@ -1,0 +1,12 @@
+{
+    "KPlugin": {
+        "Name": "Tempus",
+        "Id": "com.nyuceer.tempus",
+        "Description": "Minimal clock widget for KDE Plasma 6",
+        "Authors": [{"Name": "nyuceer"}],
+        "Version": "1.0",
+        "Category": "Date and Time",
+        "License": "MIT"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
